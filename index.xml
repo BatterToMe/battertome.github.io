@@ -273,4 +273,18 @@ $$&lt;/p></description></item><item><title>Emoji Support</title><link>https://ba
 &lt;p>&lt;strong>N.B.&lt;/strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-html" data-lang="html">.emoji {
 font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-}&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
+}&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://battertome.github.io/p/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://battertome.github.io/p/</guid><description>&lt;h1 id="linux-终端美化">linux 终端美化&lt;/h1>
+&lt;h2 id="安装zsh">安装zsh&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">apt-get install zsh
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装oh-my-zsh">安装oh-my-zsh&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">sh -c &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="替换zsh">替换zsh&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="c1"># zsh替换bash&lt;/span>
+chsh -s &lt;span class="sb">`&lt;/span>which zsh&lt;span class="sb">`&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="修改终端主题">修改终端主题&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">vim ~/.zshrc
+&lt;span class="c1"># 修改以下参数为&lt;/span>
+&lt;span class="nv">ZSH_THEME&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;agnoster&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>这时出现乱码，需要安装字体&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">apt-get install fonts-powerline
+&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
